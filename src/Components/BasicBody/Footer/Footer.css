@@ -1,0 +1,82 @@
+.footerContainer{
+    color: #fff;
+    /* padding: 7rem 0rem 3rem 0rem; */
+    background-color: rgba(0, 0, 0, 0.863);
+}
+.footerList{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    padding: 5rem 2rem 2rem 2rem;
+}
+.footerList h2{
+    font-weight: 600;
+}
+.F_logo h1{
+    font-size: 3rem;
+    letter-spacing: 10px;
+    font-weight: 500;
+}
+.F_logo img{
+ width: 8rem;
+ height: 8rem;
+ margin-left: 3.9rem;
+ cursor: pointer;
+}
+.F_logo .socialIcon{
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 1rem;
+    font-size: 1.5rem;
+}
+
+.socialIcon span{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #8584849d;
+    cursor: pointer;
+}
+.socialIcon span:hover{
+    color: #00ccff;
+    font-size: 1.8rem;
+}
+ul li a{
+    color: #fff;
+    font-weight: 400;
+}
+.contactUs select{
+    margin-top: 4rem;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    outline: none;
+}
+.copyRight{
+    text-align: center;
+    padding: 1rem;
+    border-top: 2px solid #fff;
+}
+
+@media (max-width:1024px) {
+    .footerList{
+     
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+}
+@media (max-width:600px) {
+    .footerList{
+     
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 5rem 2rem 2rem 2rem;
+    }
+}

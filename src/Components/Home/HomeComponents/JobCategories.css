@@ -1,0 +1,148 @@
+.textImgContainer {
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+  padding: 0 5rem 0 0;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 2fr;
+  place-items: center;
+  background-color: hsla(192, 100%, 50%, 0.231);
+}
+.textImgContainer .text {
+  padding: 1rem;
+  /* position: relative; */
+}
+.text h1 {
+  font-size: 3rem;
+}
+.text p {
+  font-size: 1.2rem;
+  margin-top: 8rem;
+}
+.men img {
+   
+  width: 25rem; 
+ 
+    height: auto;
+  left: -10rem;
+  top: -10rem;
+  position: absolute;
+}
+.men {
+    width: 100%;
+    height: auto;
+    display: flex;
+  position: relative;
+  background-color: pink;
+}
+
+/* .jobCategoires {
+  background-color: red;
+} */
+.jobCategoires .slider {
+  width: 100%;
+  height: 60vh;
+  margin-top: -2rem;
+  border-radius: 25px 0 25px 0;
+    border: 2px solid #7a7878;
+  background-color: #fff;
+}
+.slider .data-row {
+  /* background-color: greenyellow; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 3rem;
+  place-items: center;
+}
+.slider .data-row .dataBox {
+  width: 15rem;
+  height: 5rem;
+  box-shadow: 1px 1px 8px #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .men {
+    display: block;
+  }
+  .men img {
+   
+    /* width: 30rem; */
+   
+      /* height: auto; */
+    right: 10rem;
+    top: -18rem;
+    position: absolute;
+  }
+  .jobCategoires .slider {
+    width: 100%;
+    height: 30vh;
+    margin-top: 0rem;
+  }
+  .textImgContainer {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 0 5rem 0 0;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    text-align: center;
+    gap: 5rem;
+    /* display: flex;
+        flex-direction: column; */
+  }
+  .jobCategoires .slider {
+    width: 100%;
+    height: 60vh;
+  }
+  .slider .data-row {
+    /* background-color: greenyellow; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+  }
+  .slider .data-row .dataBox {
+    width: 13rem;
+    height: 3.5rem;
+    box-shadow: 1px 1px 8px #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dataBox h3 {
+    font-size: 1rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .slider .data-row .dataBox {
+    width: 8rem;
+    height: 4rem;
+  }
+  .dataBox h3 {
+    font-size: 1rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+  }
+  .slider .data-row {
+    row-gap: 1rem;
+    column-gap: 0.5rem;
+  }
+  .men{
+    display: block;
+  }
+}

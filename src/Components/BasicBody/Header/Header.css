@@ -1,0 +1,240 @@
+.H_Container{
+    width: 100%;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    /* height: 4rem; */
+    background: #fff;
+    z-index: 999;
+    
+}
+.M_Container{
+    width: 90%;
+    margin: auto;
+    /* height: 4rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* background-color: aqua; */
+}
+.Logo{
+    font-size: 2.5rem;
+    font-weight: 600;
+    /* padding: .5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Logo img{
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    
+}
+.Logo span{
+    color: #00ccff;
+}
+.searchBar{
+    width: 20rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 6px;
+    /* background-color: aqua; */
+}
+.searchBar input{
+    width: 17rem;
+    height: 2.28rem;
+    border-radius: 4px 0 0 4px;
+    border: 0;
+    border-right: 3px solid #000;
+    font-size: 1rem;
+    padding: .5rem;
+    outline: none;
+}
+.searchBar span{
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 3rem;
+    padding-left: .5rem;
+    color: #00ccff;
+}
+.Navbar_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+ .Navbar_user ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+ .Navbar_user ul li{
+    text-decoration: none;
+    padding-right: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+ .Navbar_user ul li:hover{
+    color: #00ccff;   
+}
+.Navbar_user ul li a:hover {
+    color: #00ccff;
+    
+  }
+  .Navbar_user ul li a {
+    color: #000;
+  }
+.Navbar_user .User{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.Navbar_user .User span{
+    color: #00ccff;
+    font-size: 2.5rem;
+    
+}
+.Navbar_user .User select{
+   background-color: #ffffff00;
+    outline: none;
+   
+    border: 0;
+    margin: 0 0 0 .8rem ;
+}
+
+.Hamburger{
+    display: none;
+    font-size: 2rem;
+    color: #00ccff;
+}
+
+.searchBar_Open{
+    display: none;
+}
+@media (max-width:1070px) {
+    /* .Navbar_user{
+        display: none;
+        transition: all 1s ease-in;
+    } */
+    .Hamburger{
+        display: block;
+    }
+    .Navbar_user{
+        display: flex;
+        flex-direction: column;
+        /* padding: .5rem 0; */
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 6rem;
+        left: -100%;
+        z-index: 9;
+        background-color: #000000e5;  
+        transition: all .4s ease-in;
+      }
+    
+      .Navbar_user ul {
+        display: flex;
+        flex-direction: column;
+      }
+      .Navbar_user li {
+        text-align: center;
+        padding: 1rem 0;
+      }
+      .Navbar_user li a:hover {
+        letter-spacing: 2px;
+        font-weight: 600; 
+        color: #00ccff;
+      }
+      .Navbar_user ul li a {
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+      .Navbar_user .User{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:0 3rem;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+    .Navbar_user .User span{
+        color: #00ccff;
+        font-size: 2rem;
+        
+    }
+    .Navbar_user .User select{
+       background-color: #ffffff00;
+        outline: none;
+        border: 0;
+        font-size: 1.2rem;
+        /* margin: 0 .8rem 0 .8rem ; */
+    }
+  
+   
+      .active {
+        
+        left: 0;
+      }
+}
+@media (max-width:750px) {
+    .searchBar{
+        display: none;
+    }
+    
+    .searchBar_Open{
+        width: 15rem;
+        height: 2.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #000;
+        border-radius: 6px;
+        margin-top: 1rem;
+        /* background-color: aqua; */
+    }
+    .searchBar_Open input{
+        width: 17rem;
+        height: 2.28rem;
+        border-radius: 4px 0 0 4px;
+        border: 0;
+        border-right: 3px solid #000;
+        font-size: .8rem;
+        padding: .5rem;
+        outline: none;
+    }
+    .searchBar_Open span{
+        font-size: 1.8rem;
+        cursor: pointer;
+        width: 3rem;
+        padding-left: .5rem;
+        color: #00ccff;
+    }
+    .Logo img{
+       
+        width: 3rem;
+        height: 3rem;
+        
+    }
+    .Logo{
+        font-size: 2rem;
+        font-weight: 700;
+       
+    }
+    .Navbar_user{
+        top: 5rem;
+    }
+
+}
+@media (max-width:500px) {
+   
+  
+}

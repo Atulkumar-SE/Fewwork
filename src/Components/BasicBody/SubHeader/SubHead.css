@@ -1,0 +1,48 @@
+.subMenu{
+   width: 80%;
+   margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: .5rem 10%; */
+    /* background-color: violet; */
+}
+
+.subMenu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+   
+}
+
+
+.subMenu span{
+    font-size: 2rem;
+    padding-right: .5rem;
+    color: #00ccff;
+}
+.subMenu select{
+    font-size: 1rem;
+    top: -5rem;
+    border: 0;
+    outline: none;
+    background-color: rgba(0, 255, 255, 0);
+}
+
+
+@media (max-width:700px) {
+    .subMenu span{
+    font-size: 1.5rem;
+   
+}
+.subMenu span:hover{
+    color:#000;
+}
+.subMenu select{
+    display: none;
+   
+    
+}
+
+}
